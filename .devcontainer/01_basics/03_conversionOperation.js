@@ -54,7 +54,7 @@ console.log("2"+2+2);//output 222
 console.log(2+2+"2");//output 42
 console.log(2+"2"+2);//output 222
 
-console.log((3+4)*5%3);
+console.log((3+4)*5%3);//output 2
 console.log(true);//output true
 console.log(+true);//1
 console.log(-true);//-1
