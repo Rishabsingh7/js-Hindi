@@ -17,6 +17,7 @@ console.log("Conversion Operations");
 //let isLoggedIn=0;//false return
 //let isLoggedIn=1;//true return
 //let isLoggedIn="";//false return
+/** 
 let isLoggedIn= "rishab";//true return
 
 let booleanIsLoggedIn=Boolean(isLoggedIn)
@@ -27,11 +28,11 @@ let someNumber=33
 let stringNumber=String(someNumber);
 console.log(stringNumber);
 console.log(typeof stringNumber);
-
+*/
 
 
 // ********************* Operations ************************
-
+/** 
 let value=3;
 let negValue=-value
 console.log(negValue);  //output -3
@@ -70,4 +71,23 @@ let gameCounter=100;
 console.log(gameCounter);
 let gamecounter=100;
 gamecounter++;//postfix
-console.log(gamecounter);
+console.log(gamecounter);*/
+
+// ********************* Converstion ************************
+
+// console.log(2>1);//true 
+// console.log(2>=1);//true
+// console.log(2<1);//false
+// console.log(2==1);//false
+// console.log(2!=1);//true
+
+
+// console.log("2">1);//true 
+// console.log("02">1);//true
+
+
+console.log(null>0);//false 
+console.log(null<0);//false
+console.log(null==0);//false
+console.log(null>=0);//true
+
