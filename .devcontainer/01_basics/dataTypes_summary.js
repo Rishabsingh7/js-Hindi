@@ -14,26 +14,26 @@ Notes ->JavaScript is a dynamically typed language, which means that data types 
 
 
 */
-const score=100;
-const scoreValue=100.3;
-const isLoggedIn=false;
-const outsideTemp=null;//object
-let userEmail;
+// const score=100;
+// const scoreValue=100.3;
+// const isLoggedIn=false;
+// const outsideTemp=null;//object
+// let userEmail;
 
-const id=Symbol('123')
-const anotherId=Symbol('123')
-console.log(id===anotherId);//false
+// const id=Symbol('123')
+// const anotherId=Symbol('123')
+// console.log(id===anotherId);//false
 
-const bigNumber=54545454542n;
+// const bigNumber=54545454542n;
 
 // Find the dataTypes of any
-console.log(typeof score); //number
-console.log(typeof scoreValue); //number
-console.log(typeof isLoggedIn);//boolean 
-console.log(typeof outsideTemp);//object
-console.log(typeof userEmail);//undefined
-console.log(typeof id);//symbol
-console.log(typeof anotherId);//symbol
+// console.log(typeof score); //number
+// console.log(typeof scoreValue); //number
+//console.log(typeof isLoggedIn);//boolean 
+//console.log(typeof outsideTemp);//object
+//console.log(typeof userEmail);//undefined
+//console.log(typeof id);//symbol
+//console.log(typeof anotherId);//symbol
 
 
 
@@ -57,6 +57,31 @@ const myFunctin=function (){
 myFunctin();
 
 // Find the dataTypes of any
-console.log(typeof myFunctin);
-console.log(typeof myObject);
-console.log(typeof heros);
+// console.log(typeof myFunctin);
+// console.log(typeof myObject);
+// console.log(typeof heros);
+
+
+//  ++++++++++++++++++++++++++++++++++++
+//Basically two types of Memory
+//Stack(Primitive) stack me copy milta hai  , Heap(Non-Primitive) heap me reference milta hai
+
+let myName="rishab kumar singh"
+let anotherName=myName;
+anotherName="monu kumar singh"
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo =userOne
+userTwo.email="rishab@gmail.com"
+userTwo.upi="rishab@ybl"
+console.log(userOne.email);
+console.log(userTwo.email);
+console.log(userOne.upi);
+console.log(userTwo.upi);
