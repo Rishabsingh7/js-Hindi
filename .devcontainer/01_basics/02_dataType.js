@@ -6,7 +6,7 @@ console.log("DataType");
 console.log(3+3); //code readability should be high
 console.log("rishab")
 let name="rishab";//String dataType
-let age=20;//number dataType
+let age=20;// dataType
 let isLoggedIn=false;//boolean Datatype
 let state=null;
 /*  DataTypes
