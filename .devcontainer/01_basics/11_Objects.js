@@ -90,4 +90,12 @@ navbar(company="rishab");
 
 //kai baar API arrays ke format me bhi milti hai
 
+[
+    {},
+    {},
+    {}
+]
+
 //hellow kaise ho aap sab
+
+ 
