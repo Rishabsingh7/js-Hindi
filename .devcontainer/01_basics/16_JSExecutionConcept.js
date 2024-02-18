@@ -67,7 +67,7 @@ Note1         wapas se ek senbox bana hai jiske under sabse pahle memory phase h
 
 function one(){
        console.log("one");
-       two()
+       two();
 }
 function two(){
        console.log("two");
