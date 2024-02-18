@@ -28,4 +28,55 @@ Note1 JavaScript is single Thread
        }
        let result1=addNum(val1,val2)
        let result2=addNum(10,2)
+
+       Explanation steps wise
+       1.Global Execution
+               this
+       2 Memory Phase
+         val1->undefined
+         val2->undefined
+         addNun->defination
+         result1->undefined
+         result2->undefined
+
+       3 Execution Phase
+         val1=10
+         val2=5
+         addNum=>[Other execution thread /new variable environment] 
+Note1         wapas se ek senbox bana hai jiske under sabse pahle memory phase hoga
+        3(i) Memory Phase
+        val1=undefined;
+        val2=undefined;
+        total=undefined
+        
+        3(ii)Execution Context
+        num1=10;
+        num2=5;
+        total=15;
+        result1=15
+
+        total in return Global execution
+
+// note After the complete our works its delete (Global execution)
+
+
+
+
  */
+//Call Stacks
+
+function one(){
+       console.log("one");
+       two()
+}
+function two(){
+       console.log("two");
+       three();
+}
+function three(){
+       console.log("three");
+}
+
+one();
+two();
+three();
