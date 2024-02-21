@@ -20,9 +20,9 @@ map.set('IN',"India");
 map.set('USA',"United States of America");
 map.set('Fr',"France");
 
-console.log(map);
+//console.log(map);
 for(const [key,value] of map){
-console.log(key,':-',value);
+//console.log(key,':-',value);
 }
 
 const myObject={
@@ -32,6 +32,7 @@ const myObject={
 }
 
 //ye wala code kaam nahi karega
+//myObject is not iterable
 // for (const [key,value] of myObject) {
 //      console.log(key,':-',value);
 // }
@@ -44,14 +45,14 @@ const myObjects={
     swift:'swift by apple'
 }
 
-// for(const key in myObjects){
-//     console.log(`${key} shortcut is for ${myObjects[key]}`);
-// }
+for(const key in myObjects){
+    //console.log(`${key} shortcut is for ${myObjects[key]}`);
+}
 
-// const programming =["js","rb","py","java","cpp","c"]
-// for(const key in programming){
-//  console.log(programming[key]);
-// }
+const programming =["js","rb","py","java","cpp","c"]
+for(const key in programming){
+ //console.log(programming[key]);
+}
 
 
 // const map=new Map()
@@ -63,7 +64,7 @@ const myObjects={
 //  }
 
 
-  const coding=["html","css","js","ruby","java","python","cpp"]
+  //const coding=["html","css","js","ruby","java","python","cpp"]
 //  coding.forEach(function (item) {
 //     console.log(item);
 //  })
@@ -72,14 +73,14 @@ const myObjects={
 //     console.log(val);
 // })
 
-function printMe(item){
+//function printMe(item){
     //console.log(item);
-}
+//}
 //coding.forEach(printMe);
 
-coding.forEach((item,index,arr)=>{
+//coding.forEach((item,index,arr)=>{
     //console.log(item,index,arr);
-})
+//})
 
 const myCoding=[
    {
@@ -99,12 +100,12 @@ const myCoding=[
     languageFileName:"py"
    },
    {
-    languageName:"javaScript",
-    languageFileName:"js"
+    languageName:"Ruby",
+    languageFileName:"rb"
    },
 ]
 
 myCoding.forEach((item)=>{
-   // console.log(item.languageName);
-   // console.log(item.languageFileName);
+   console.log(item.languageName);
+   console.log(item.languageFileName);
 })
