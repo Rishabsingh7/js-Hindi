@@ -14,6 +14,7 @@
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color:aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
    </div>
 </body>
@@ -26,10 +27,10 @@
     //jQuery-on
 
        
-    document.getElementById('owl').addEventListener('click',function(e){
-      alert("Owl Clicked Again"); 
-      console.log(e);
-    },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //   alert("Owl Clicked Again"); 
+    //   console.log(e);
+    // },false)
 
     //Which important topics learn in EventListener
     //type, timestamp,defaultPrevented,target ,toElement,srcElement,currentTarget
@@ -38,5 +39,32 @@
 
 
 //Event Propogation
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("clicked inside the owl");
+    // },false)
+
+
+    //sometimes we don't want event bubbling the its condition applying  then we used stopPropagation()
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("clicked inside the ul");
+    },false)
+
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("clicked inside the owl");
+        e.stopPropagation();
+    },false)
+
+    //we dont want to when we clicked on google to go to google websites
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("Google clicked");
+    },false)
 </script>
 </html>
