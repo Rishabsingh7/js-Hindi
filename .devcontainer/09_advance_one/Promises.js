@@ -86,14 +86,24 @@ consumePromiseFive()
 
 
 //Next Class Topics
-async function getAllUser(){
-    try{
-        const response=fetch('https://api.github.com/users/Rishabsingh7')
-       // console.log(response);
-     const data=await response.json()
-     console.log(data);
-    }catch(error){
-        console.log("E: ",error);
-    }
-}
-getAllUser()
+// async function getAllUser(){
+//     try{
+//         const response=fetch('https://api.github.com/users/Rishabsingh7')
+//        // console.log(response);
+//      const data=await response.json()
+//      console.log(data);
+//     }catch(error){
+//         console.log("E: ",error);
+//     }
+// }
+// getAllUser()
+
+
+fetch('https://api.github.com/users/Rishabsingh7')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+ console.log(data);
+})
+.catch((error) => console.log(error))
