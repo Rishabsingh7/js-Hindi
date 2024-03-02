@@ -1,15 +1,18 @@
 # javaScript And classes
 
-##  OOP
+##  OOPS
 -Collection of Properties And methods
--toLowerCase
+Examples of Object 
+-toLowerCase,toUpperCase,promises
 
 ## Why we need OOP/why use OOP
 
 
 
+
 ## Parts of OOP
 Object literal
+
 
 ## Some important keyword
 -Construnctor function
@@ -18,8 +21,11 @@ Object literal
 -Instances(new,this)
 
 
-## 4 pillars
+## 4 pillars/keywords
 Abstraction    means details hide kar lena  Example fetch 
 Encapsulation    wrrape of data 
 Inheritance
 Polymorphism
+
+
+//Most inportnant 
