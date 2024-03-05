@@ -25,8 +25,8 @@ Array.prototype.heyRishab=function(){
     console.log(`Rishab says hello`)
 }
 //heroPower.rishab()
-myHeros.rishab()
-myHeros.heyRishab()
+// myHeros.rishab()
+// myHeros.heyRishab()
 //heroPower.heyRishab()
 
 //Inheritance
@@ -57,4 +57,11 @@ Object.setPrototypeOf(TeachingSupport,Teacher)
 
 
 
-let anotherUserName="rishabAurCode  "
+let anotherUserName="rishabAurCode              " 
+String.prototype.trueLength=function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`)
+}
+anotherUserName.trueLength();
+"Rishab".trueLength()
+"iceTea".trueLength()
