@@ -13,7 +13,7 @@ const user={
 //console.log(user.getUserDetails());
 //console.log(this);//return Empty {}
 
-function User(username,loginCount,isLoggedIn){
+function User(username,loginCount,isLoggedIn){ 
     this.username=username;
     this.loginCount=loginCount;
     this.isLoggedIn=isLoggedIn;
@@ -25,6 +25,6 @@ function User(username,loginCount,isLoggedIn){
     return this;
 }
 const userOne=new User("Rishab",12,true);
-const userTwo=User("Jain",11,false);
+const userTwo=User("Singh",11,false);
 console.log(userOne.constructor);
 console.log(userTwo);

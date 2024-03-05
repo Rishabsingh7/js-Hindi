@@ -14,6 +14,7 @@ Examples of Object
 Object literal
 
 
+
 ## Some important keyword
 -Construnctor function
 -Prototypes/Proto
