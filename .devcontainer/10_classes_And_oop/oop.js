@@ -19,12 +19,14 @@ function User(username,loginCount,isLoggedIn){
     this.isLoggedIn=isLoggedIn;
 
     this.greeting =function(){
-        console.log(`Welcome ${this}`)
+        console.log(`Welcome ${this.username}`)
     }
 
-    return this;
+   // return this; //Optional you want to return other wise its okey
+   return this;
 }
 const userOne=new User("Rishab",12,true);
-const userTwo=User("Singh",11,false);
+const userTwo=new User("Ayush",11,false);
+//console.log(userOne);
 console.log(userOne.constructor);
-console.log(userTwo);
+// console.log(userTwo);
